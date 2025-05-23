@@ -11,7 +11,9 @@ public class Programa {
         isabela.setLotacao("Brasilia");
         isabela.setEmail("isabela@gmail.");
 
+        isabela.calcularSalarioHorasExtras(10,5.60);
         System.out.println("Servidor: "+ isabela.getNome());
+        System.out.printf("Horas Extras R$ %.2f: ",isabela.getHorasExtras());
 
     }
 }
