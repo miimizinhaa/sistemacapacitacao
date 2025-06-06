@@ -31,11 +31,26 @@ public class Produto {
 
     public Produto(){}
 
-    public Produto(String nome, double preco, int quantidade,double valorTotalEstoque){
+    public Produto(String nome, double preco, int quantidade){
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
 
+    }
+    public double valorTotalEstoque(){
+        return preco * quantidade;
+    }
+    public void adiciona(int quantidadeAdicionar){
+        quantidade += quantidadeAdicionar;
+    }
+    public void retirar(int quantidadeRetirar){
+        quantidade -= quantidadeRetirar;
+    }
+    public void mostrando(){
+        System.out.println("Nome: "+nome);
+        System.out.println("Preco: R$"+preco);
+        System.out.println("Quantidade: "+quantidade);
+        System.out.println("O valor total em estoque: R$ "+valorTotalEstoque());
     }
 }
 
