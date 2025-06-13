@@ -52,6 +52,9 @@ public class Produto {
         System.out.println("Quantidade: "+quantidade);
         System.out.println("O valor total em estoque: R$ "+valorTotalEstoque());
     }
+
+
+
 }
 
 
